@@ -203,9 +203,7 @@ function addToCart(e){
 
   localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
 
-  //console.log(shoppingCart);
-  //console.log(e.id);
-  //console.log(newItem);
+
 }
 
 
