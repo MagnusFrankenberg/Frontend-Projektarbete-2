@@ -1,0 +1,334 @@
+
+/*assortment*/
+.box{
+    background: lightblue;
+    border: 1px solid dodgerblue;
+    min-height: 10rem;
+    font-size: 2rem;
+}
+
+.navbar{
+    background: white;
+    border-bottom: 3px solid rgb(41, 41, 67) ;
+}
+
+.navbar_checkout{
+    direction: flex;
+   width: 100%;
+  
+}
+
+#cartImage{
+   width: 1.5rem;
+ /* float: left;*/
+}
+   
+
+.category{
+    background:white;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    padding-top: 3rem;
+}
+
+.card-title{
+    font-size: 1rem;
+    font-weight: 600;
+ 
+}
+.card-text{
+    color: rgb(108, 106, 106);
+}
+.category_header{
+    color: rgb(86, 92, 106);
+   padding: 1rem;
+}
+.card{
+    width: 100%;
+}
+.card-body{
+   display:flex;
+   flex-direction: column;
+   justify-content: flex-end;
+}
+.card-footer{
+    background: none;
+    border-top: none;
+}
+.rating{
+    font-size: small;
+    margin-bottom: 0;
+}
+.card-img-top{
+  padding: 20px;
+    
+}
+.price{
+    font-size: larger;
+}
+.linkModal{
+    text-decoration: none;
+}
+.btn{
+    z-index: 1;
+}
+
+
+/*orderForm*/
+.page_header{
+    margin: 2rem;
+}
+
+#yourInformation{
+    border: solid 1px lightblue;
+
+}
+
+#yourProducts{
+    border: solid 1px lightblue;
+ 
+}
+.form-group{
+    padding-top: 0.7rem ;
+}
+
+.error{
+      font-size: 0.8rem;
+      color: red;
+  }
+
+  #submit-error{
+    font-size: 0.8rem;
+      color: red;
+      margin-top: 0.5rem;
+  }
+
+.checkoutForm button{
+    margin-top: 2rem
+}
+.validMessage{
+    color: green;
+    font-size: 0.8rem;
+}
+
+
+
+
+  /*****  Cart  *****/
+
+
+#cart{
+    margin-top: 1rem;
+}
+
+.cartItem{
+    display: grid;
+    grid-template: 60fr 40fr / 15fr 85fr;
+    border: solid 1px grey;
+    margin-bottom: 1rem;
+    padding: 0.3rem;
+    border-radius: 0.7rem;
+}
+
+.cartImage{
+   width: 60%;
+  
+}
+
+.box_left{
+    width: 100%;
+  
+  /*  border: solid 1px grey; */
+    grid-row: 1 / span 2;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.box_title{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    
+ /*   border: solid 1px grey;*/
+}
+
+.iTitle{
+    font-weight: 500;
+}
+
+.removeItemBox{
+    display: flex;
+    justify-content: right;
+    text-align: center;
+}
+
+.removeItemBtn{
+    padding: 0;
+    width: 1.3rem;
+    height: 1.3rem;
+    font-weight: 700;
+    color: brown;
+    border: 1px solid;
+    line-height: 1rem;
+
+}
+
+
+.box_price{
+   
+    width: 100%;
+    height: 100%;
+  /*  border: solid 1px grey;*/
+    display:flex;
+  
+    align-items: center;
+}
+
+.iQty{
+    margin: 0rem;
+    margin-right: 1rem;
+}
+
+
+.btnBox .btn{
+    padding: 0rem 0.3rem;
+    height: 1.5rem;
+    font-weight: 700;
+    line-height: 1rem;
+   
+}
+
+.btnBox{
+    display: grid;
+    grid-template-columns: 30fr 30fr 30fr;
+    height: 1.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+}
+
+.addBtn{
+    color: green;
+    
+}
+.removeBtn{
+   color:brown;
+   
+}
+
+.icount{
+    width: 1.5rem;
+    height: 1.5rem;
+    padding-inline: 0.4rem;
+}
+
+.iPrice{
+    margin-left: 1rem;
+    font-size: small;
+}
+
+.iPriceTot{
+    margin-right: 2rem;
+    text-align: right;
+    font-weight: 600;
+}
+
+#totalPrice{
+    padding-top: 0.5rem;
+    margin-top: 1rem;
+    border-top: 1px dotted;
+}
+
+#btn_clearCart{
+    width: 7rem;
+ }
+
+
+ /**** OrderConfirmation ****/
+
+.conf_container{
+    color: rgb(94, 92, 92);
+}
+
+.conf_container .cartItem{
+    display: grid;
+    grid-template: 60fr 40fr / 15fr 85fr;
+    border: solid 1px grey;
+    margin-bottom: 0.4rem;
+    padding: 0.3rem;
+    border-radius: 0.3rem;
+}
+
+
+ .conf_orderItems{
+    width: 80%;
+ }
+
+ .conf_orderTotal{
+    width: 79%;
+    padding: 1rem;
+    margin-top: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 1.2rem;
+ }
+
+ .orderTotal{
+    margin-right: 1.6rem;
+    font-weight: 600;
+ }
+
+ .conf_recipient{
+    width: 79%;
+    min-height: 10rem;
+    font-size: 2rem;
+    margin-top: 3rem;
+ }
+
+ .conf_deliveryAddress{
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+ }
+
+.contactInfo{
+    padding: 1rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+
+.recipient_text{
+    font-size: 1rem;
+}
+
+
+ /**** Contact ****/
+
+ .contact_container{
+    color: rgb(94, 92, 92);
+}
+
+.contact_details{
+    width: 80%;
+    margin-top: 1rem;
+}
+
+.contact{
+    padding: 0.5rem;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+.contact_text{
+    font-size: medium;
+}
+
+.contact_map{
+    width: 80%;
+    padding: 0.3rem;
+    margin: 3rem;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
