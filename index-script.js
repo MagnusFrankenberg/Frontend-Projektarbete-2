@@ -200,10 +200,7 @@ function addToCart(e){
   };
 
   shoppingCart.push(newItem);
-
   localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
-
-
 }
 
 

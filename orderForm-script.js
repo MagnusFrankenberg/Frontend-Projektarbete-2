@@ -21,15 +21,15 @@ const validRegexCity = /^[a-zA-Z\s-åäöÅÄÖ]*$/;
 const validRegexPostal =/^[0-9]{3}\s{1}[0-9]{2}$/;
 const validRegexName = /^[a-zA-Z-åäöÅÄÖ. ]+\s{1}[a-zA-Z-åäöÅÄÖ. ]+$/; 
 
-let name, phoneNumber, email, address, postalCode, city;
+let myname, phoneNumber, email, address, postalCode, city;
 
 function validateName(){
-name = document.getElementById('name').value;
-if(name.length < 2 || name.length > 50){
+myname = document.getElementById('name').value;
+if(myname.length < 2 || myname.length > 50){
   nameError.innerHTML = 'Name is not valid';
   return false;
 }
-if(!name.match(validRegexName)){
+if(!myname.match(validRegexName)){
   nameError.innerHTML = 'Full name is required';
   return false;
 }
@@ -112,7 +112,7 @@ submitError.innerHTML = 'There are errors in one or more fields. Resolve before 
 setTimeout(function(){submitError.style.display = 'none';}, 3000);
 }
 else{
-      sessionStorage.setItem('name', name);
+      sessionStorage.setItem('name', myname);
       sessionStorage.setItem('email', email);
       sessionStorage.setItem('phoneNumber', phoneNumber);
       sessionStorage.setItem('address', address);
@@ -137,7 +137,6 @@ function retrieveCart(){
 
 const cartDiv = document.getElementById('cart');
 
-
 let shoppingCart = getShoppingCart();
 if(shoppingCart.length){
   //skapa unika items
@@ -148,9 +147,7 @@ if(shoppingCart.length){
   uniqueItems.sort((a,b) => (a.id > b.id) ? 1: ((b.id>a.id) ? -1 : 0));
 
   //För varje unik item, skapa upp en cartitem =>
-
   uniqueItems.forEach((item)=>{
-
 
   let cartItem = document.createElement('div');
   cartItem.className = 'cartItem';
@@ -295,9 +292,9 @@ localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
 
 update_iCount_iPriceTot(item);
 updateTotalPrice();
-
 }
 
+//Tar bort cartItem från Cart
 function removeItemFromCart(item){
 let shoppingCart = getShoppingCart();
 
@@ -306,7 +303,6 @@ localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
 
 document.getElementById('cart').textContent = "";
 retrieveCart();
-
 }
 
 
