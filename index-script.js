@@ -113,7 +113,7 @@ function renderCards(json){
     rating.innerHTML = `Rating: ${e.rating.rate} (${e.rating.count})`;
     cardFooter.append(rating);
 
-///Modal///
+///Modal/////////////////////
 
     //Skapa modal  https://getbootstrap.com/docs/4.0/components/modal/
     let modal = document.createElement("div");
@@ -154,7 +154,6 @@ function renderCards(json){
     modalBody.innerHTML = `${e.description}`;
     modalContent.append(modalBody);
    
-
     //skapa modal-footer
     let modalFooter = document.createElement("div");
     modalFooter.className = 'modal-footer';
@@ -169,8 +168,6 @@ function renderCards(json){
     modalCloseBtn.innerHTML = 'Close';
     modalFooter.append(modalCloseBtn);
 
-
-    /////////
     //skapa link för modal
     let linkModal = document.createElement("a");
     linkModal.className = "linkModal stretched-link";  //blockerar Add to cart knappen, löst med z-index
@@ -180,8 +177,6 @@ function renderCards(json){
     linkModal.innerHTML = "Read more...";
     cardBody.append(linkModal);
    // console.log(linkModal);
-    
-
   
   })
 
@@ -202,8 +197,6 @@ function addToCart(e){
   shoppingCart.push(newItem);
   localStorage.setItem("shoppingCart", JSON.stringify(shoppingCart));
 }
-
-
 
 
 loadContent();

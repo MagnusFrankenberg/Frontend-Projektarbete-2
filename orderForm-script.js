@@ -240,6 +240,7 @@ if(shoppingCart.length){
 updateTotalPrice();
 }
 
+// Uppdatera Antal och Totalprice (cartItem)
 function update_iCount_iPriceTot(item){
 let shoppingCart = getShoppingCart();
 
